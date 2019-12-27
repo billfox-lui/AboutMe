@@ -14,12 +14,14 @@
             margin-top:2px;
             margin-bottom: 2px;
         }
+        /*
         div{
             margin-top:8px;
             height:30px;
             border: 1px;
             line-height: 30px;
         }
+        */
         #d1{
             width:100%;
             background-color:coral;
@@ -79,15 +81,18 @@
 -->
 
     <h3>字体大小单位</h3>
-    <h4>一、em是相对父单位的尺寸大小</h4>
     <div id="emdiv">
-        <div id="em1">没有设定单位=父亲20px</div>
+        <h4>一、em是相对父单位的尺寸大小</h4>
+        <div id="em1">没有设定单位=父亲字体大小20px</div>
         <div id="em2">字体大小=0.5em</div>
         <div id="em3">字体大小=0.8em</div>
         <div id="em4">字体大小=1.0em</div>
     </div>
-    
 
+    <div id="remdiv">
+        <h4>二、rem是相对于浏览器的单位的</h4>
+        <div id="getsize">HTML根元素的字体大小=</div>
+    </div>
 
 
     <script>
@@ -102,6 +107,7 @@
             str += "window.devicePixelRatio=" + window.devicePixelRatio + "<br>";
             content.innerHTML = str;
             */
+            document.getElementById('getsize').innerText = "HTML根元素的字体大小="+getComputedStyle(window.document.documentElement)['font-size'];
         }
     </script>
 
