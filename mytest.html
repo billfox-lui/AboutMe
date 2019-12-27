@@ -34,34 +34,30 @@
         }
         #d4{
             width:50vw;
-            height:50vh;
+            height:10vh;
             background-color:brown;
         }
     </style>
 </head>
 <body>
-    <h3>JS获取设备信息</h3>
+    <h3>浏览器相关参数数值</h3>
     <p id="content"></p>
+
+    <h3>div宽高控制</h3>
     <div id="d1">宽度为100%</div>
     <div id="d2">宽度为固定值360px</div>
     <div id="d3">宽度为100vw</div>
     <div id="d4">高度为50vh</div>
+
+    <h3>特殊表单元素类型</h3>
     <form action="#" method="post">
-        <!--包含#和*的输入-->
         <label for="mytel">电话号码:</label><input type="tel" name="myteltel" id="mytel"><br>
-        <!-- 全数字的输入-->
         <label for="mynumber">全是数字:</label><input pattern="\d*" id="mynumber"><br>
-        <!-- 拨号 -->
         <a href="tel:10086">打电话给:10086</a> <br>
-        <!-- 发送短信 -->
         <a href="sms:10086">发短信给:10086</a><br>
-        <!-- 发送邮件 -->
         <a href="mailto:billfox@yeah.net">发邮件给:billfox@yeah.net</a><br>
-        <!-- 选择照片或者拍摄照片 -->
         <input type="file" name="myfile" id="myfile" accept="image/*"><br>
-        <!-- 选择视频或者拍摄视频 -->
         <input type="file" name="myvideo" id="myvideo" accept="video/*"><br>
-        <!-- 多选 -->
         <input type="file" name="mulfile" id="mulfile" multiple><br>
     </form>
 
