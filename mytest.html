@@ -36,7 +36,19 @@
         <!--包含#和*的输入-->
         <label for="mytel">电话号码:</label> <input type="tel" name="myteltel" id="mytel"><br>
         <!-- 全数字的输入-->
-        <label for="mynumber">全是数字</label><input pattern="\d*" id="mynumber"><br>
+        <label for="mynumber">全是数字:</label><input pattern="\d*" id="mynumber"><br>
+        <!-- 拨号 -->
+        <a href="tel:10086">打电话给:10086</a> <br>
+        <!-- 发送短信 -->
+        <a href="sms:10086">发短信给:10086</a><br>
+        <!-- 发送邮件 -->
+        <a href="mailto:billfox@yeah.net">发邮件给:billfox@yeah.net</a><br>
+        <!-- 选择照片或者拍摄照片 -->
+        <input type="file" name="myfile" id="myfile" accept="image/*"><br>
+        <!-- 选择视频或者拍摄视频 -->
+        <input type="file" name="myvideo" id="myvideo" accept="video/*"><br>
+        <!-- 多选 -->
+        <input type="file" name="mulfile" id="mulfile" multiple><br>
 
 
     </form>
