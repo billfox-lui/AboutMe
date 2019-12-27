@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>H5 Web App测试页面</title>
+    <style>
+        #abc{
+            width:100%;
+            height:10px;
+            border: 1px;
+            color:blue;
+        }
+        #def{
+            width: 360px;;
+            height:10px;
+            border: 1px;
+            color:aqua;
+        }
+    </style>
 </head>
 <body>
     <h1>JS获取设备信息</h1>
     <p id="content"></p>
+    <div id="abc">宽度为100%</div>
+    <div id="def">宽度为固定值</div>
     <script>
         window.onload = function(){
             var content = document.getElementById("content");
