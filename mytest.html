@@ -34,20 +34,27 @@
         }
         #d4{
             width:50vw;
-            height:10vh;
+            height:4vh;
             background-color:brown;
+        }
+        #emdiv{
+            font-family: '微软雅黑';
+            font-size:20px;
         }
     </style>
 </head>
 <body>
+
+<!--
     <h3>浏览器相关参数数值</h3>
     <p id="content"></p>
+
 
     <h3>div宽高控制</h3>
     <div id="d1">宽度为100%</div>
     <div id="d2">宽度为固定值360px</div>
     <div id="d3">宽度为100vw</div>
-    <div id="d4">高度为50vh</div>
+    <div id="d4">高度为4vh</div>
 
     <h3>特殊表单元素类型</h3>
     <form action="#" method="post">
@@ -60,9 +67,23 @@
         <input type="file" name="myvideo" id="myvideo" accept="video/*"><br>
         <input type="file" name="mulfile" id="mulfile" multiple><br>
     </form>
+-->
+
+    <h3>字体大小单位</h3>
+    <h4>em是相对父单位的尺寸大小</h4>
+    <div id="emdiv">
+        <div id="em1">没有设定单位</div>
+        <div id="em2">字体大小=0.5em</div>
+        <div id="em4">字体大小=0.8em</div>
+        <div id="em5">字体大小=1.0em</div>
+    </div>
+    
+
+
 
     <script>
         window.onload = function(){
+            /*
             var content = document.getElementById("content");
             var str = "";
             str += "screen.width=" + screen.width + "<br>";
@@ -71,7 +92,10 @@
             str += "window.innerHeight=" + window.innerHeight + "<br>";
             str += "window.devicePixelRatio=" + window.devicePixelRatio + "<br>";
             content.innerHTML = str;
+            */
         }
     </script>
+
+
 </body>
 </html>
