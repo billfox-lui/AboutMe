@@ -32,6 +32,15 @@
     <p id="content"></p>
     <div id="abc">宽度为100%</div>
     <div id="def">宽度为固定值360px</div>
+    <form action="#" method="post">
+        <!--包含#和*的输入-->
+        <input type="tel" name="myteltel" id="mytel">
+        <!-- 全数字的输入-->
+        <input pattern="\d*">
+
+
+    </form>
+
     <script>
         window.onload = function(){
             var content = document.getElementById("content");
@@ -41,7 +50,6 @@
             str += "window.innerWidth=" + window.innerWidth + "<br>";
             str += "window.innerHeight=" + window.innerHeight + "<br>";
             str += "window.devicePixelRatio=" + window.devicePixelRatio + "<br>";
-
             content.innerHTML = str;
         }
     </script>
