@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>H5 Web App测试页面</title>
     <style>
+        html{
+            font-size:62.5%;
+        }
         body{
             margin:0;
             padding:0;
@@ -52,6 +55,9 @@
         #em4{
             font-size:1.0em;
         }
+        #rem1{
+            font-size: 2.0rem;
+        }
     </style>
 </head>
 <body>
@@ -81,17 +87,18 @@
 -->
 
     <h3>字体大小单位</h3>
+    <h4>一、em是相对父单位的尺寸大小</h4>
     <div id="emdiv">
-        <h4>一、em是相对父单位的尺寸大小</h4>
         <div id="em1">没有设定单位=父亲字体大小20px</div>
         <div id="em2">字体大小=0.5em</div>
         <div id="em3">字体大小=0.8em</div>
         <div id="em4">字体大小=1.0em</div>
     </div>
 
+    <h4>二、rem是相对于浏览器的单位的</h4>
     <div id="remdiv">
-        <h4>二、rem是相对于浏览器的单位的</h4>
         <div id="getsize">HTML根元素的字体大小=</div>
+        <div id="rem1">字体大小=2.0rem</div>
     </div>
 
 
