@@ -10,31 +10,39 @@
             margin:0;
             padding:0;
         }
-        #abc{
-            width:100%;
+        h3{
+            margin-top:2px;
+            margin-bottom: 2px;
+        }
+        div{
+            margin-top:8px;
             height:30px;
             border: 1px;
-            background-color:coral;
             line-height: 30px;
         }
-        #def{
+        #d1{
+            width:100%;
+            background-color:coral;
+        }
+        #d2{
             width: 360px;;
-            height:30px;
-            border: 1px;
             background-color:aqua;
-            margin-top: 10px;
-            line-height: 30px;
+        }
+        #d3{
+            width:100vw;
+            background-color: darkgreen;
         }
     </style>
 </head>
 <body>
-    <h1>JS获取设备信息</h1>
+    <h3>JS获取设备信息</h3>
     <p id="content"></p>
-    <div id="abc">宽度为100%</div>
-    <div id="def">宽度为固定值360px</div>
+    <div id="d1">宽度为100%</div>
+    <div id="d2">宽度为固定值360px</div>
+    <div id="d3">宽度为100vw</div>
     <form action="#" method="post">
         <!--包含#和*的输入-->
-        <label for="mytel">电话号码:</label> <input type="tel" name="myteltel" id="mytel"><br>
+        <label for="mytel">电话号码:</label><input type="tel" name="myteltel" id="mytel"><br>
         <!-- 全数字的输入-->
         <label for="mynumber">全是数字:</label><input pattern="\d*" id="mynumber"><br>
         <!-- 拨号 -->
@@ -49,8 +57,6 @@
         <input type="file" name="myvideo" id="myvideo" accept="video/*"><br>
         <!-- 多选 -->
         <input type="file" name="mulfile" id="mulfile" multiple><br>
-
-
     </form>
 
     <script>
